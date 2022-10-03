@@ -83,5 +83,32 @@ header .links .icon span:last-child {
 header .links .icon:hover  span:nth-child(2){
     width: 100%;
 }
-
+header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    background-color: #f6f6f6;
+    top: calc(100% + 10px);
+    display: none;
+}
+header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+  }
+  header .links li {
+    display: block;
+    padding: 10px;
+    border-bottom: solid 1px #ddd;
+  }
+  header .links:hover ul {
+    display: block;
+  }
 /*End header*/
