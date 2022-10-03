@@ -36,6 +36,11 @@ font-family: "Work Sans", sans-serif;
   }
 
 /* End Global Rules */
+/* Start variables */
+:root {
+  --main-color:#10cab7;
+}
+/* End variables */
 
 
 /*Start header*/
@@ -93,6 +98,7 @@ header .links ul {
     background-color: #f6f6f6;
     top: calc(100% + 10px);
     display: none;
+    z-index: 1;
 }
 header .links ul::before {
     content: "";
@@ -107,8 +113,46 @@ header .links ul::before {
     display: block;
     padding: 10px;
     border-bottom: solid 1px #ddd;
-  }
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
   header .links:hover ul {
     display: block;
   }
+  header .links li:hover {
+    padding-left: 25px;
+  }
 /*End header*/
+/* Start section landing */
+ .landing {
+  background-image: url(../images/landing.jpg);
+  background-size: cover;
+  height: calc(100vh - 70px);
+  position: relative;
+}
+.landing .intro-landing {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, -50%);
+  -moz-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  -o-transform: translate(50%, -50%);
+  text-align: center;
+  width: 320px;
+  max-width: 100%;
+}
+.landing h1 {
+  margin: 0;
+  color: var(--main-color);
+  font-size: 50px;
+  font-weight: bold;
+}
+.landing p {
+  font-size: 20px;
+}
+/* End section landing */
