@@ -39,6 +39,7 @@ font-family: "Work Sans", sans-serif;
 /* Start variables */
 :root {
   --main-color:#10cab7;
+  --co-background:#f6f6f6;
 }
 /* End variables */
 
@@ -154,5 +155,33 @@ header .links ul::before {
 }
 .landing p {
   font-size: 20px;
+  line-height: 1.8em;
 }
 /* End section landing */
+/* Start section features */
+body .features {
+  background-color: var(--co-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+body .features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+body .features .container .feat {
+  text-align: center;
+  padding: 20px;
+}
+body .features .container i {
+  font-size: 40px;
+  color: var(--main-color);
+}
+body .features .container  h2 {
+  margin: 30px 0;
+}
+body .features .container p {
+  line-height: 1.8em;
+  color: #777;
+}
+/* End section features */
