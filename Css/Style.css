@@ -269,3 +269,34 @@ body .features .container p {
   }
 }
 /* Start Services  */
+/* Start section portfolio */
+body .section-portfolio {
+  background-color: var(--co-background);
+}
+body .portfolios {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap:30px;
+  /* justify-content: space-evenly; */
+}
+body .portfolios .card {
+  /* width: 300px; */
+  background-color: #fff;
+  margin: 20px 0;
+}
+body .portfolios .card img {
+  max-width: 100%;
+}
+body .portfolios .card .info {
+  padding: 20px;
+}
+body .portfolios .card h3 {
+  margin: 0;
+}
+body .portfolios .card p {
+  color: #777;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+/* End section portfolio */
