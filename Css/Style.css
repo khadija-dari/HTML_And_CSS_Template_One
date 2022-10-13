@@ -382,3 +382,45 @@ color: #777;
 line-height: 1.8;
 }
 /* End section about */
+/* Start section contact */
+body .contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--co-background);
+}
+section .contact-content {
+  text-align: center;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+section .contact-content p:first-of-type {
+font-size: 35px;
+font-weight: bold;
+letter-spacing: -3px;
+color: var(--secondary-color);
+margin-bottom: 10px;
+}
+section .contact-content .link {
+text-decoration: none;
+font-size: 35px;
+font-weight: bold;
+letter-spacing: -3px;
+color: var(--main-color);
+
+}
+section .contact-content p:last-of-type {
+font-size: 15px;
+}
+section .contact-content p:last-of-type i {
+  margin-left: 10px;
+  color: var(--secondary-color);
+}
+@media (max-width:767) {
+  section .contact-content p:first-of-type {
+    font-size: 25px;
+  }
+  section .contact-content .link {
+    font-size: 25px;
+  }
+}
+/* End section contact *
