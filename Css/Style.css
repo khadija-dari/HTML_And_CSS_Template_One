@@ -423,4 +423,16 @@ section .contact-content p:last-of-type i {
     font-size: 25px;
   }
 }
-/* End section contact *
+/* End section contact */
+/* Start footer */
+footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+}
+footer span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+/* End footer */
